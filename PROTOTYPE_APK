@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="author" content="Talitha Syifa Al Fath_124250173 & Marva H._124250159">    
-  <meta name="description" content="web apk ganti aja nama apknya">
+  <meta name="description" content="web SiDesa">
   
   <title>Pendataan Lansia & Disabilitas di Desa</title>
   <link rel="icon" href="" type="image/x-icon">
@@ -819,37 +819,44 @@
       <div class="section-header">
         <div class="section-title" data-i18n="sec_features">Fitur Unggulan</div>
       </div>
+      <a href="pendataan.php" class="feature-link">
       <div class="features-grid">
         <div class="feature-card">
           <div class="feature-icon">📋</div>
           <div class="feature-title" data-i18n="feat1_title">Pendataan Lengkap</div>
           <div class="feature-desc" data-i18n="feat1_desc">Rekam identitas, kesehatan, dan kebutuhan warga secara detail dan terstruktur.</div>
         </div>
+        <a href="statistik.php" class="feature-link">
         <div class="feature-card">
           <div class="feature-icon">📊</div>
           <div class="feature-title" data-i18n="feat2_title">Statistik Otomatis</div>
           <div class="feature-desc" data-i18n="feat2_desc">Grafik distribusi usia, jenis disabilitas, dan status kesehatan diperbarui otomatis.</div>
         </div>
+        <a href="filter.php" class="feature-link">
         <div class="feature-card">
           <div class="feature-icon">🔍</div>
           <div class="feature-title" data-i18n="feat3_title">Filter & Pencarian</div>
           <div class="feature-desc" data-i18n="feat3_desc">Cari data per RT, status kesehatan, atau jenis disabilitas dengan cepat.</div>
         </div>
+        <a href="ekspor.php" class="feature-link">
         <div class="feature-card">
           <div class="feature-icon">📤</div>
           <div class="feature-title" data-i18n="feat4_title">Ekspor Laporan</div>
           <div class="feature-desc" data-i18n="feat4_desc">Download data dalam format CSV untuk keperluan administrasi & laporan desa.</div>
         </div>
+        <a href="jadwal.php" class="feature-link">
         <div class="feature-card">
           <div class="feature-icon">🔔</div>
           <div class="feature-title" data-i18n="feat5_title">Notifikasi Jadwal</div>
           <div class="feature-desc" data-i18n="feat5_desc">Pengingat otomatis untuk jadwal kontrol kesehatan dan posyandu lansia.</div>
         </div>
-        <div class="feature-card">
-          <div class="feature-icon">🔐</div>
-          <div class="feature-title" data-i18n="feat6_title">Hak Akses Berbeda</div>
-          <div class="feature-desc" data-i18n="feat6_desc">Admin desa, kader posyandu, dan user umum memiliki akses yang berbeda.</div>
-        </div>
+        <a href="akses.php" class="feature-link">
+    <div class="feature-card">
+        <div class="icon-box">🔐</div>
+        <h3>Manajemen Sistem</h3> 
+        <p>Keamanan data terjamin dengan pembagian peran admin dan kader desa.</p>
+    </div>
+</a>
       </div>
     </section>
   </main>
