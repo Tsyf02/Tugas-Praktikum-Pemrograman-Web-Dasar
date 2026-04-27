@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
@@ -171,41 +171,41 @@
       <tbody>
         <tr>
           <td class="text-center">1</td>
-          <td><b>Bpk. Ahmad</b></td>
+          <td><b>Budi Santoso</b></td>
           <td class="text-center">3201010101010001</td>
-          <td class="text-center">Lansia</td>
-          <td class="text-center">04</td>
-          <td class="text-center" style="color: #166534;">Sehat</td>
-        </tr>
-        <tr>
-          <td class="text-center">2</td>
-          <td><b>Ibu Siti</b></td>
-          <td class="text-center">3201010101010002</td>
-          <td class="text-center">Disabilitas Fisik</td>
-          <td class="text-center">02</td>
-          <td class="text-center" style="color: #92400E;">Pantauan</td>
-        </tr>
-        <tr>
-          <td class="text-center">3</td>
-          <td><b>Mbah Marijan</b></td>
-          <td class="text-center">3201010101010003</td>
-          <td class="text-center">Lansia</td>
-          <td class="text-center">04</td>
-          <td class="text-center" style="color: #166534;">Sehat</td>
-        </tr>
-        <tr>
-          <td class="text-center">4</td>
-          <td><b>Agus Kurniawan</b></td>
-          <td class="text-center">3201010101010004</td>
-          <td class="text-center">Disabilitas Netra</td>
+          <td class="text-center">Tunanetra</td>
           <td class="text-center">01</td>
           <td class="text-center" style="color: #166534;">Sehat</td>
         </tr>
         <tr>
+          <td class="text-center">2</td>
+          <td><b>Siti Rahayu</b></td>
+          <td class="text-center">3201010101010002</td>
+          <td class="text-center">Tunarangu</td>
+          <td class="text-center">01</td>
+          <td class="text-center" style="color: #92400E;">Pantauan</td>
+        </tr>
+        <tr>
+          <td class="text-center">3</td>
+          <td><b>Mbah Karno</b></td>
+          <td class="text-center">3201010101010003</td>
+          <td class="text-center">Tunadaksa</td>
+          <td class="text-center">02</td>
+          <td class="text-center" style="color: #166534;">Sehat</td>
+        </tr>
+        <tr>
+          <td class="text-center">4</td>
+          <td><b>Dewi Lestari</b></td>
+          <td class="text-center">3201010101010004</td>
+          <td class="text-center">Tidak Ada</td>
+          <td class="text-center">02</td>
+          <td class="text-center" style="color: #166534;">Sehat</td>
+        </tr>
+        <tr>
           <td class="text-center">5</td>
-          <td><b>Ibu Aminah</b></td>
+          <td><b>Haji Mahmud</b></td>
           <td class="text-center">3201010101010005</td>
-          <td class="text-center">Lansia</td>
+          <td class="text-center">Tunagrahita</td>
           <td class="text-center">03</td>
           <td class="text-center" style="color: #92400E;">Pantauan</td>
         </tr>
