@@ -79,37 +79,37 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><b>Bpk. Ahmad</b></td>
+                    <td><b>Budi Santoso</b></td>
                     <td>3201010101010001</td>
-                    <td><span class="badge badge-lansia">Lansia</span></td>
+                    <td><span class="badge badge-lansia">Tunanetra</span></td>
                     <td>04</td>
                     <td><span class="badge badge-sehat">Sehat</span></td>
                 </tr>
                 <tr>
-                    <td><b>Ibu Siti</b></td>
+                    <td><b>Siti Rahayu</b></td>
                     <td>3201010101010002</td>
-                    <td><span class="badge badge-disabilitas">Fisik</span></td>
+                    <td><span class="badge badge-disabilitas">Tunarangu</span></td>
                     <td>02</td>
                     <td><span class="badge badge-pantauan">Pantauan</span></td>
                 </tr>
                 <tr>
-                    <td><b>Mbah Marijan</b></td>
+                    <td><b>Mbah Karno</b></td>
                     <td>3201010101010003</td>
-                    <td><span class="badge badge-lansia">Lansia</span></td>
+                    <td><span class="badge badge-lansia">Tunadaksa</span></td>
                     <td>04</td>
                     <td><span class="badge badge-sehat">Sehat</span></td>
                 </tr>
                 <tr>
-                    <td><b>Agus Kurniawan</b></td>
+                    <td><b>Dwi Lestari</b></td>
                     <td>3201010101010004</td>
-                    <td><span class="badge badge-disabilitas">Netra</span></td>
+                    <td><span class="badge badge-disabilitas">Tidak Ada</span></td>
                     <td>01</td>
                     <td><span class="badge badge-sehat">Sehat</span></td>
                 </tr>
                 <tr>
-                    <td><b>Ibu Aminah</b></td>
+                    <td><b>Haji Mahmud</b></td>
                     <td>3201010101010005</td>
-                    <td><span class="badge badge-lansia">Lansia</span></td>
+                    <td><span class="badge badge-lansia">Tunagrahita</span></td>
                     <td>03</td>
                     <td><span class="badge badge-pantauan">Pantauan</span></td>
                 </tr>
