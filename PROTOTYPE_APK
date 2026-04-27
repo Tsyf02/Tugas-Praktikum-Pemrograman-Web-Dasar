@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="author" content="Talitha Syifa Al Fath_124250173 & Marva H._124250159">    
   <meta name="description" content="web apk ganti aja nama apknya">
+  
   <title>Pendataan Lansia & Disabilitas di Desa</title>
-
+  <link rel="icon" href="" type="image/x-icon">
+/* TOLONG LOGO BISA KITA UBAH*/
 
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
