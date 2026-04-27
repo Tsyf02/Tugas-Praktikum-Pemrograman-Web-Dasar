@@ -734,7 +734,7 @@
   <!-- Banner -->
   <section class="banner">
     <div class="banner-inner">
-      <div class="banner-tag">🏡 <span data-i18n="tag_village">Sistem Resmi Desa NAMANYAAPA?</span></div>
+      <div class="banner-tag">🏡 <span data-i18n="tag_village">Sistem Resmi Desa Kebon Agung</span></div>
       <h2 data-i18n="banner_title">Pendataan Lansia &amp;<br>Disabilitas Desa</h2>
       <p data-i18n="banner_sub">Memonitor kesehatan, kesejahteraan, dan kebutuhan warga lansia &amp; disabilitas secara real-time untuk desa yang lebih inklusif.</p>
       <div class="banner-actions">
@@ -997,7 +997,7 @@
 <footer>
   <div class="footer-inner">
     <div class="footer-col">
-      <div class="footer-col-title">🏥 Nama APK APA?</div>
+      <div class="footer-col-title">🏥 SiDesa</div>
       <p data-i18n="footer_desc">Sistem Pendataan Lansia &amp; Disabilitas Desa. Membangun desa yang lebih inklusif dan berdaya.</p>
     </div>
     <div class="footer-col">
@@ -1009,13 +1009,13 @@
     </div>
     <div class="footer-col">
       <div class="footer-col-title" data-i18n="footer_contact">Kontak</div>
-      <p>📍 Nama Desa, Kec. Desa<br>
+      <p>📍 Kebon Agung, Kec.Imogiri<br>
          📞 NOMOR TELEPHONE<br>
          ✉️ admin@desa.id</p>
     </div>
   </div>
   <div class="footer-bottom">
-    <span data-i18n="footer_copy">© 2026 Sistem Pendataan Desa | NAMA DESA</span>
+    <span data-i18n="footer_copy">© 2026 Sistem Pendataan Desa Kebon Agung</span>
     <span data-i18n="footer_rights">Hak cipta dilindungi</span>
   </div>
 </footer>
