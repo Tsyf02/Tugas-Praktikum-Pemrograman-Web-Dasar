@@ -216,7 +216,6 @@
         <p><b>Ringkasan Data:</b></p>
         <ul>
             <li>Total Lansia: 12 Orang</li>
-            <li>Total Disabilitas: 8 Orang</li>
             <li>Total Kondisi Sehat: 6 Orang</li>
             <li>Total Penerima Bantuan: 10 Orang</li>
         </ul>
