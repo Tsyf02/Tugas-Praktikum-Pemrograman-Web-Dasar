@@ -43,9 +43,9 @@
 <main>
     <div class="overview">
         <div class="stat-card"><h4>Lansia</h4><p>12</p></div>
-        <div class="stat-card"><h4>Disabilitas</h4><p>14</p></div>
-        <div class="stat-card"><h4>Kondisi Sehat</h4><p>15</p></div>
-        <div class="stat-card"><h4>Pantauan</h4><p>5</p></div>
+        <div class="stat-card"><h4>Disabilitas</h4><p>8</p></div>
+        <div class="stat-card"><h4>Kondisi Sehat</h4><p>6</p></div>
+        <div class="stat-card"><h4>Pantauan</h4><p>3</p></div>
     </div>
 
     <div class="chart-container-main">
@@ -86,15 +86,15 @@
     // Data sesuai index.php
     new Chart(document.getElementById('ageChart'), {
         type: 'doughnut',
-        data: { labels: ['Lansia', 'Umum'], datasets: [{ data: [12, 8], backgroundColor: ['#1A56DB', '#D1D9EF'] }] },
+        data: { labels: ['Lansia'], datasets: [{ data: [12], backgroundColor: ['#1A56DB', '#D1D9EF'] }] },
         options: options
     });
 
     new Chart(document.getElementById('disChart'), {
         type: 'bar',
         data: { 
-            labels: ['Fisik', 'Netra', 'Rungu', 'Wicara'], 
-            datasets: [{ label: 'Warga', data: [5, 3, 2, 4], backgroundColor: '#0EA5E9', borderRadius: 8 }] 
+            labels: ['Grahita', 'Netra', 'Rungu', 'Wicara', 'Daksa'], 
+            datasets: [{ label: 'Warga', data: [1, 2, 2, 1, 2], backgroundColor: '#0EA5E9', borderRadius: 8 }] 
         },
         options: options
     });
