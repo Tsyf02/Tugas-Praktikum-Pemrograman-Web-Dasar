@@ -969,7 +969,7 @@
         <div class="section-title" data-i18n="sec_about">Tentang Sistem</div>
       </div>
       <div class="chart-card" style="max-width:720px">
-        <h3 style="font-family:'Nunito',sans-serif;font-size:1.3rem;font-weight:900;color:var(--text);margin-bottom:14px;" data-i18n="about_title">🏥 "NAMA APK?" Sistem Pendataan Lansia &amp; Disabilitas</h3>
+        <h3 style="font-family:'Nunito',sans-serif;font-size:1.3rem;font-weight:900;color:var(--text);margin-bottom:14px;" data-i18n="about_title">🏥 "SiDesa" Sistem Pendataan Lansia &amp; Disabilitas</h3>
         <p style="color:var(--text-muted);font-size:.9rem;line-height:1.8;margin-bottom:16px;" data-i18n="about_desc">
           APK INI adalah platform digital yang dirancang untuk membantu pemerintah desa dalam mendata dan memonitor kondisi warga lansia dan penyandang disabilitas secara akurat dan terpadu.
         </p>
