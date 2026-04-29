@@ -734,7 +734,7 @@
   <!-- Banner -->
   <section class="banner">
     <div class="banner-inner">
-      <div class="banner-tag">🏡 <span data-i18n="tag_village">Sistem Resmi Desa Kebon Agung</span></div>
+      <div class="banner-tag">🏡 <span data-i18n="tag_village">Sistem Resmi Desa</span></div>
       <h2 data-i18n="banner_title">Pendataan Lansia &amp;<br>Disabilitas Desa</h2>
       <p data-i18n="banner_sub">Memonitor kesehatan, kesejahteraan, dan kebutuhan warga lansia &amp; disabilitas secara real-time untuk desa yang lebih inklusif.</p>
       <div class="banner-actions">
@@ -987,7 +987,7 @@
             <div style="font-size:.8rem;color:var(--text-muted);margin-top:4px;">Tim Alia (173) & Marva (159)</div>
           </div>
         </div>
-        <p style="color:var(--text-muted);font-size:.82rem;" data-i18n="about_footer">© 2026 Sistem Pendataan Desa | Desa "nama desa apa?". Semua hak dilindungi.</p>
+        <p style="color:var(--text-muted);font-size:.82rem;" data-i18n="about_footer">© 2026 Sistem Pendataan Desa | SiDesa". Semua hak dilindungi.</p>
       </div>
     </section>
   </main>
@@ -1015,7 +1015,7 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <span data-i18n="footer_copy">© 2026 Sistem Pendataan Desa Kebon Agung</span>
+    <span data-i18n="footer_copy">© 2026 Sistem Pendataan Desa| SiDesa</span>
     <span data-i18n="footer_rights">Hak cipta dilindungi</span>
   </div>
 </footer>
@@ -1135,7 +1135,7 @@ const i18n = {
   id: {
     brand_title:"SiDesa", brand_sub:"Sistem Pendataan Desa",
     nav_home:"🏠 Beranda", nav_data:"👥 Data Warga", nav_stats:"📊 Statistik", nav_about:"ℹ️ Tentang",
-    tag_village:"Sistem Resmi Desa Maju Makmur",
+    tag_village:"Sistem Resmi Desa",
     banner_title:"Pendataan Lansia &<br>Disabilitas Desa",
     banner_sub:"Memonitor kesehatan, kesejahteraan, dan kebutuhan warga lansia & disabilitas secara real-time untuk desa yang lebih inklusif.",
     btn_add:"Tambah Data Warga", btn_stats:"Lihat Statistik", btn_export:"Export CSV",
@@ -1170,10 +1170,10 @@ const i18n = {
     about_title:"🏥 SiDesa — Sistem Pendataan Lansia & Disabilitas",
     about_desc:"SiDesa adalah platform digital yang dirancang untuk membantu pemerintah desa dalam mendata dan memonitor kondisi warga lansia dan penyandang disabilitas secara akurat dan terpadu.",
     about_tech_title:"Teknologi", about_version:"Versi", about_dev:"Pengembang",
-    about_footer:"© 2026 Sistem Pendataan Desa | Desa Maju Makmur. Semua hak dilindungi.",
-    footer_desc:"Sistem Pendataan Lansia & Disabilitas Desa Maju Makmur. Membangun desa yang lebih inklusif dan berdaya.",
+    about_footer:"© 2026 Sistem Pendataan Desa | SiDesa. Semua hak dilindungi.",
+    footer_desc:"Sistem Pendataan Lansia & Disabilitas Desa. Membangun desa yang lebih inklusif dan berdaya.",
     footer_nav:"Navigasi", footer_contact:"Kontak",
-    footer_copy:"© 2026 Sistem Pendataan Desa | Desa Maju Makmur",
+    footer_copy:"© 2026 Sistem Pendataan Desa | SiDesa",
     footer_rights:"Hak cipta dilindungi",
     toast_saved:"✅ Data berhasil disimpan!", toast_deleted:"🗑️ Data berhasil dihapus.",
     toast_exported:"📤 Data diekspor ke CSV.",
@@ -1184,7 +1184,7 @@ const i18n = {
   en: {
     brand_title:"SiDesa", brand_sub:"Village Data System",
     nav_home:"🏠 Home", nav_data:"👥 Resident Data", nav_stats:"📊 Statistics", nav_about:"ℹ️ About",
-    tag_village:"Official System of Desa Maju Makmur",
+    tag_village:"Official System of Desa",
     banner_title:"Elderly &amp; Disability<br>Data System",
     banner_sub:"Monitor the health, welfare, and needs of elderly and disabled residents in real-time for a more inclusive village.",
     btn_add:"Add Resident", btn_stats:"View Statistics", btn_export:"Export CSV",
@@ -1219,10 +1219,10 @@ const i18n = {
     about_title:"🏥 SiDesa — Elderly & Disability Data System",
     about_desc:"SiDesa is a digital platform designed to assist village governments in accurately and comprehensively recording and monitoring the condition of elderly residents and people with disabilities.",
     about_tech_title:"Technology", about_version:"Version", about_dev:"Developer",
-    about_footer:"© 2026 Village Data System | Desa. All rights reserved.",
+    about_footer:"© 2026 Village Data System | SiDesa. All rights reserved.",
     footer_desc:"Elderly & Disability Data System of Desa. Building a more inclusive and empowered village.",
     footer_nav:"Navigation", footer_contact:"Contact",
-    footer_copy:"© 2026 Village Data System | Desa",
+    footer_copy:"© 2026 Village Data System | SiDesa",
     footer_rights:"All rights reserved",
     toast_saved:"✅ Data saved successfully!", toast_deleted:"🗑️ Data deleted successfully.",
     toast_exported:"📤 Data exported to CSV.",
