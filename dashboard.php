@@ -1,4 +1,4 @@
-<?= // dashboard.php — Halaman Utama / Dashboard
+<?= // jadi pada file ini dashboard.php : sebagai Halaman Utama (Dashboard).
 session_start();
 // Redirect to login if not authenticated
 if (!isset($_SESSION['user'])) {
