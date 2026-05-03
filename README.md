@@ -22,7 +22,7 @@ SIPEMANDIRI/
 
 │
 
-├── includes/
+├── INCLUDES/
 
 
 │   ├── header.php      → Header, sidebar navigasi, topbar (shared)
@@ -31,7 +31,7 @@ SIPEMANDIRI/
 
 │
 
-└── assets/    
+└── ASSETS/    
     ├── style.css       → Stylesheet utama
    
 
