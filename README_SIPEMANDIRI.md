@@ -35,7 +35,7 @@ sipemandiri/
 
    └── main.js         → JavaScript utama
 
--------------------------------------------------------------------------- 
+
      Keterangan Kode yang Kami Gunakan dalam Program SIPEMANDIRI
   PHP              : Server (logic), session, serta form handlingnya.
   HTML             : Struktur untuk halaman website kami.
@@ -45,4 +45,4 @@ sipemandiri/
   Chart.js         : Grafik/Diagram Batang (Bar Chart), Garis (Line Chart), serta Donut (Doughnut Chart).
   Font Awesome 6   : Ikon Navigasi pada Web.
   Google Fonts     : Untuk penulisan (typografi).
---------------------------------------------------------------------------
+
