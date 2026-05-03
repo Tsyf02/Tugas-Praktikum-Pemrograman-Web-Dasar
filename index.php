@@ -1,3 +1,41 @@
+<?php
+//dari file index.php // ini nantinya sebagai login nya
+session_start();
+
+// "Redirect" jika kondisi "already logged in"
+if (isset($_SESSION['user'])) {
+    header('Location: dashboard.php');
+    exit;
+}
+
+$error = '';
+
+// Handle login - form submission
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $username = trim($_POST['username'] ?? '');
+    $password = trim($_POST['password'] ?? '');
+
+    // Demo credentials (in production: query from database)
+    $valid_users = [
+        'admin'    => ['password' => 'admin123',   'name' => 'Admin Desa',     'role' => 'Administrator'],
+        'petugas'  => ['password' => 'petugas123',  'name' => 'Petugas Desa',  'role' => 'Petugas Lapangan'],
+        'pimpinan' => ['password' => 'pimpinan123', 'name' => 'Kepala Desa',   'role' => 'Pimpinan'],
+    ];
+
+    if (isset($valid_users[$username]) && $valid_users[$username]['password'] === $password) {
+        $_SESSION['user'] = [
+            'username' => $username,
+            'name'     => $valid_users[$username]['name'],
+            'role'     => $valid_users[$username]['role'],
+        ];
+        header('Location: dashboard.php');
+        exit;
+    } else {
+        $error = 'Username atau password salah. Silakan coba lagi.';
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="id" data-theme="light">
 <head>
@@ -17,7 +55,7 @@
 
 <div class="login-page">
 
-    <!-- Left Visual Panel -->
+    <!-- Visual Panel (kiri) -->
     <div class="login-visual">
         <div>
             <div class="login-visual-badge">
@@ -47,7 +85,7 @@
         </div>
     </div>
 
-    <!-- Right Login Panel -->
+    <!-- Login Panel (Kanan) -->
     <div class="login-panel">
         <div class="login-form-box">
 
@@ -133,7 +171,7 @@
 </div>
 
 <script>
-    // Toggle password visibility
+    // Toggle password (visibility)
     document.getElementById('togglePwd').addEventListener('click', function() {
         const pwd  = document.getElementById('password');
         const icon = document.getElementById('eyeIcon');
