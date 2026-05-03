@@ -1,7 +1,5 @@
-<?php
-//dari file index.php // ini nantinya sebagai login nya
+<?= //dari file index.php // ini nantinya sebagai login nya
 session_start();
-
 // "Redirect" jika kondisi "already logged in"
 if (isset($_SESSION['user'])) {
     header('Location: dashboard.php');
