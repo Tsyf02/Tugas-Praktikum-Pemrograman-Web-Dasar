@@ -56,3 +56,7 @@ sipemandiri/
  
   Google Fonts     : Untuk penulisan (typografi).
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+      ***Keterangan:** Abaikan Folder Arsip dan folder lainnya. Buka saja yang "sipemandiri" itu projek kami.
+      
