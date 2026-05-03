@@ -3,24 +3,41 @@ SIPEMANDIRI
 
     Struktur Folder Pada Program SIPEMANDIRI
 sipemandiri/
+
 ├── index.php           → Halaman Login
 
 ├── dashboard.php       → Dashboard utama (statistik & grafik)
+
 ├── peta.php            → Peta interaktif sebaran lokasi (Leaflet.js)
+
 ├── data.php            → Daftar & pencarian data penduduk
+
 ├── tambah.php          → Formulir tambah data penduduk baru
+
 ├── laporan.php         → Laporan & statistik (Chart.js)
+
 ├── cetak.php           → Halaman cetak dokumen resmi
+
 │
+
 ├── includes/
+
+
 │   ├── header.php      → Header, sidebar navigasi, topbar (shared)
+
 │   └── footer.php      → Penutup layout & skrip (shared)
+
 │
-└── assets/
+
+└── assets/    
     ├── style.css       → Stylesheet utama
-    └── main.js         → JavaScript utama
+   
+
+   └── main.js         → JavaScript utama
+
         
-    Keterangan Kode yang Kami Gunakan dalam Program SIPEMANDIRI
+
+Keterangan Kode yang Kami Gunakan dalam Program SIPEMANDIRI
   PHP         : Server (logic), session, serta form handlingnya
   HTML        : Struktur untuk halaman website kami
   CSS         : Styling
