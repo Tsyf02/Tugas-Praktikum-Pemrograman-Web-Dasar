@@ -8,7 +8,7 @@ if (isset($_SESSION['user'])) {
 
 $error = '';
 
-// Handle login - form submission
+// Handle login (form submission)
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = trim($_POST['username'] ?? '');
     $password = trim($_POST['password'] ?? '');
@@ -33,6 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 ?>
+    <!--html nya kebawah  -->
 <!DOCTYPE html>
 <html lang="id" data-theme="light">
 <head>
