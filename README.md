@@ -4,7 +4,7 @@
 
 
     Struktur Folder Pada Program SIPEMANDIRI
-sipemandiri/
+SIPEMANDIRI/
 
 ├── index.php           → Halaman Login
 
