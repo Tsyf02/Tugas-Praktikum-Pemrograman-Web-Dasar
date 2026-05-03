@@ -6,19 +6,19 @@
     Struktur Folder Pada Program SIPEMANDIRI
 SIPEMANDIRI/
 
-├── index.php           → Halaman Login
+├── 3. index.php           → Halaman Login
 
-├── dashboard.php       → Dashboard utama (statistik & grafik)
+├── 2. dashboard.php       → Dashboard utama (statistik & grafik)
 
-├── peta.php            → Peta interaktif sebaran lokasi (Leaflet.js)
+├── 3. peta.php            → Peta interaktif sebaran lokasi (Leaflet.js)
 
-├── data.php            → Daftar & pencarian data penduduk
+├── 4. data.php            → Daftar & pencarian data penduduk
 
-├── tambah.php          → Formulir tambah data penduduk baru
+├── 5. tambah.php          → Formulir tambah data penduduk baru
 
-├── laporan.php         → Laporan & statistik (Chart.js)
+├── 6. laporan.php         → Laporan & statistik (Chart.js)
 
-├── cetak.php           → Halaman cetak dokumen resmi
+├── 7. cetak.php           → Halaman cetak dokumen resmi
 
 │
 
