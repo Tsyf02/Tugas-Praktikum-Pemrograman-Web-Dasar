@@ -438,7 +438,7 @@ Tentang
 <h1>
 Sistem Informasi Pemetaan Lokasi & <br>
 Data Mandiri Penduduk Non-Permanen <br>
-(Kontrak & Kost) Berbasis Web
+(Kontrak & Kost)
 </h1>
 
 <p>
