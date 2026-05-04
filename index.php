@@ -409,7 +409,7 @@ gap:15px;
 <header>
 
 <div class="logo">
-📍 SiMap Kost & Kontrak
+📍 SIPeManDiRi
 </div>
 
 <nav>
