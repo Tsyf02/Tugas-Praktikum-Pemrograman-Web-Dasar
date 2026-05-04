@@ -25,7 +25,7 @@ $data = mysqli_query($conn,"SELECT * FROM penduduk");
 <header>
 
 <div class="logo">
-📍 SiMap Kost & Kontrak
+📍 SIPeManDiRi
 </div>
 
 <nav>
