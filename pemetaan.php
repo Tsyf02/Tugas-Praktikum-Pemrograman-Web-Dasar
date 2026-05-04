@@ -17,8 +17,9 @@
 <header>
 
 <div class="logo">
-📍 SiPemandiri
+📍 SiMap Kost & Kontrak
 </div>
+
 <nav>
 <a href="index.php">Beranda</a>
 <a href="pendataan.php">Pendataan</a>
@@ -26,9 +27,9 @@
 <a href="statistik.php">Statistik</a>
 <a href="tentang.php">Tentang</a>
 </nav>
+
 </header>
 
-  
 <section class="hero">
 
 <h1>
