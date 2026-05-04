@@ -87,6 +87,23 @@ SELECT * FROM penduduk
 ");
 
 ?>
+<?php
+
+$conn = mysqli_connect("localhost","root","","db_penduduk");
+
+$total = mysqli_fetch_assoc(mysqli_query($conn,"
+SELECT COUNT(*) as jumlah FROM penduduk
+"))['jumlah'];
+
+$kost = mysqli_fetch_assoc(mysqli_query($conn,"
+SELECT COUNT(*) as jumlah FROM penduduk WHERE jenis='Kost'
+"))['jumlah'];
+
+$kontrak = mysqli_fetch_assoc(mysqli_query($conn,"
+SELECT COUNT(*) as jumlah FROM penduduk WHERE jenis='Kontrak'
+"))['jumlah'];
+
+?>
 
 <!DOCTYPE html>
 <html lang="id">
@@ -392,7 +409,7 @@ gap:15px;
 <header>
 
 <div class="logo">
-📍 SIPeManDiRi
+📍 SiMap Kost & Kontrak
 </div>
 
 <nav>
@@ -405,6 +422,9 @@ Pendataan
 </a>
 <a href="pemetaan.php">
 Pemetaan
+</a>
+<a href="statistik.php">
+Statistik
 </a>
 <a href="tentang.php">
 Tentang
@@ -436,22 +456,22 @@ cepat, akurat, dan terintegrasi berbasis web.
 <section class="cards">
 
 <div class="card">
-<h2 id="total">4</h2>
+<h2><?= $total; ?></h2>
 <p>Total Penduduk</p>
 </div>
 
 <div class="card">
-<h2>2</h2>
+<h2><?= $kost; ?></h2>
 <p>Penghuni Kost</p>
 </div>
 
 <div class="card">
-<h2>2</h2>
+<h2><?= $kontrak; ?></h2>
 <p>Penghuni Kontrak</p>
 </div>
 
 <div class="card">
-<h2>8</h2>
+<h2><?= $kost + $kontrak; ?></h2>
 <p>Total Lokasi</p>
 </div>
 
