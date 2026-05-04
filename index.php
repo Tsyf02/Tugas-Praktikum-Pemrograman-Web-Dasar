@@ -1,7 +1,87 @@
 <?php
 $conn = mysqli_connect("localhost","root","","db_penduduk");
+if(isset($_GET['hapus'])){
 
-$data = mysqli_query($conn,"SELECT * FROM penduduk");
+$id = $_GET['hapus'];
+
+mysqli_query($conn,"
+DELETE FROM penduduk
+WHERE id='$id'
+");
+
+echo "
+<script>
+alert('Data berhasil dihapus');
+document.location='index.php';
+</script>
+";
+
+}
+
+/* ========================= */
+/* EDIT DATA */
+/* ========================= */
+
+if(isset($_POST['update'])){
+
+$id = $_POST['id'];
+$nama = $_POST['nama'];
+$alamat = $_POST['alamat'];
+$nohp = $_POST['nohp'];
+$jenis = $_POST['jenis'];
+
+mysqli_query($conn,"
+UPDATE penduduk SET
+
+nama='$nama',
+alamat='$alamat',
+nohp='$nohp',
+jenis='$jenis'
+
+WHERE id='$id'
+
+");
+
+echo "
+<script>
+alert('Data berhasil diupdate');
+document.location='index.php';
+</script>
+";
+
+}
+
+if(isset($_POST['simpan'])){
+
+$nama = $_POST['nama'];
+$alamat = $_POST['alamat'];
+$nohp = $_POST['nohp'];
+$jenis = $_POST['jenis'];
+
+mysqli_query($conn,"
+INSERT INTO penduduk
+VALUES(
+'',
+'$nama',
+'$alamat',
+'$nohp',
+'$jenis'
+)
+");
+
+echo "
+<script>
+alert('Data berhasil ditambahkan');
+document.location='index.php';
+</script>
+";
+
+}
+
+$data = mysqli_query($conn,"
+SELECT * FROM penduduk
+");
+
 ?>
 
 <!DOCTYPE html>
@@ -441,13 +521,34 @@ while($row = mysqli_fetch_assoc($data)){
 
 <td>
 
-<button class="edit">
+<button
+class="edit"
+
+onclick="editData(
+'<?= $row['id']; ?>',
+'<?= $row['nama']; ?>',
+'<?= $row['alamat']; ?>',
+'<?= $row['nohp']; ?>',
+'<?= $row['jenis']; ?>'
+)"
+
+>
+
 Edit
+
 </button>
 
-<button class="delete">
+<a href="?hapus=<?= $row['id']; ?>">
+
+<button
+class="delete"
+onclick="return confirm('Yakin ingin menghapus data ini?')">
+
 Hapus
+
 </button>
+
+</a>
 
 </td>
 
@@ -473,6 +574,11 @@ Hapus
 
 <form method="POST">
 
+<input
+type="hidden"
+name="id"
+id="id">
+
 <input type="text" name="nama" placeholder="Nama Lengkap" required>
 
 <input type="text" name="alamat" placeholder="Alamat Tinggal" required>
@@ -486,8 +592,19 @@ Hapus
 
 </select>
 
-<button type="submit" name="simpan" class="save">
+<button type="submit" class="save" id="btnSubmit">
 Simpan
+</button>
+
+<button
+type="submit"
+name="update"
+class="save"
+id="btnUpdate"
+style="display:none;">
+
+Update
+
 </button>
 
 <button type="button" class="close" onclick="closeModal()">
@@ -521,13 +638,21 @@ document.getElementById("modal").style.display="none";
 
 <?php
 
-if(isset($_POST['simpan'])){
+if(isset($_POST['nama'])){
 
-$nama = $_POST['nama'];
+$id     = $_POST['id'];
+$nama   = $_POST['nama'];
 $alamat = $_POST['alamat'];
-$nohp = $_POST['nohp'];
-$jenis = $_POST['jenis'];
+$nohp   = $_POST['nohp'];
+$jenis  = $_POST['jenis'];
 
+/* ================= */
+/* CEK EDIT / TAMBAH */
+/* ================= */
+
+if($id == ""){
+
+// TAMBAH DATA
 mysqli_query($conn,"
 INSERT INTO penduduk
 VALUES(
@@ -542,10 +667,64 @@ VALUES(
 echo "
 <script>
 alert('Data berhasil ditambahkan');
-document.location='index.php';
+document.location='pendataan.php';
+</script>
+";
+
+}else{
+
+// UPDATE DATA
+mysqli_query($conn,"
+UPDATE penduduk SET
+nama='$nama',
+alamat='$alamat',
+nohp='$nohp',
+jenis='$jenis'
+WHERE id='$id'
+");
+
+echo "
+<script>
+alert('Data berhasil diupdate');
+document.location='pendataan.php';
 </script>
 ";
 
 }
 
+}
 ?>
+
+
+?>
+<script>
+
+function editData(id,nama,alamat,nohp,jenis){
+
+document.getElementById("modal").style.display="flex";
+
+document.getElementById("id").value = id;
+document.getElementById("nama").value = nama;
+document.getElementById("alamat").value = alamat;
+document.getElementById("nohp").value = nohp;
+document.getElementById("jenis").value = jenis;
+
+document.getElementById("btnSubmit").innerText = "Update";
+
+}
+
+function openModal(){
+
+document.getElementById("modal").style.display="flex";
+
+document.getElementById("id").value = "";
+document.getElementById("nama").value = "";
+document.getElementById("alamat").value = "";
+document.getElementById("nohp").value = "";
+document.getElementById("jenis").value = "Kost";
+
+document.getElementById("btnSubmit").innerText = "Simpan";
+
+}
+
+</script>
