@@ -1,0 +1,14 @@
+CREATE DATABASE db_penduduk;
+USE db_penduduk;
+CREATE TABLE penduduk (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nama VARCHAR(100) NOT NULL,
+    alamat TEXT NOT NULL,
+    nohp VARCHAR(20) NOT NULL,
+    jenis ENUM('Kost','Kontrak') NOT NULL
+);
+INSERT INTO penduduk (nama, alamat, nohp, jenis) VALUES
+('Budi Santoso','Jl. Melati No.1','081234567890','Kost'),
+('Siti Aminah','Jl. Mawar No.2','082345678901','Kontrak'),
+('Rudi Hartono','Jl. Anggrek No.3','083456789012','Kost'),
+('Wati','Jl. Kenanga No.4','084567890123','Kontrak');
