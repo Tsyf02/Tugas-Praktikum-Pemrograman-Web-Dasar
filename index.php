@@ -1,4 +1,12 @@
 <?php
+session_start();
+
+if(!isset($_SESSION['login'])){
+header("Location: login.php");
+exit;
+}
+?>
+<?php
 $conn = mysqli_connect("localhost","root","","db_penduduk");
 if(isset($_GET['hapus'])){
 
