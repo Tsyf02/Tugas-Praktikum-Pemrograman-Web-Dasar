@@ -12,3 +12,12 @@ INSERT INTO penduduk (nama, alamat, nohp, jenis) VALUES
 ('Siti Aminah','Jl. Mawar No.2','082345678901','Kontrak'),
 ('Rudi Hartono','Jl. Anggrek No.3','083456789012','Kost'),
 ('Wati','Jl. Kenanga No.4','084567890123','Kontrak');
+/*untuk login*/
+CREATE TABLE user (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50),
+    password VARCHAR(255)
+);
+
+INSERT INTO user (username, password)
+VALUES ('sistem', MD5('12345'));
