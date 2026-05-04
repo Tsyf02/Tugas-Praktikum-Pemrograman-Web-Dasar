@@ -1,7 +1,3 @@
-<!-- ========================= -->
-<!-- FILE : pemetaan.php -->
-<!-- ========================= -->
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -21,18 +17,18 @@
 <header>
 
 <div class="logo">
-📍 SiMap Kost & Kontrak
+📍 SiPemandiri
 </div>
-
 <nav>
 <a href="index.php">Beranda</a>
 <a href="pendataan.php">Pendataan</a>
 <a href="pemetaan.php">Pemetaan</a>
+<a href="statistik.php">Statistik</a>
 <a href="tentang.php">Tentang</a>
 </nav>
-
 </header>
 
+  
 <section class="hero">
 
 <h1>
