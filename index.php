@@ -17,6 +17,8 @@ DELETE FROM penduduk
 WHERE id='$id'
 ");
 
+
+
 echo "
 <script>
 alert('Data berhasil dihapus');
@@ -110,10 +112,11 @@ SELECT COUNT(*) as jumlah FROM penduduk WHERE jenis='Kontrak'
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Sistem Informasi Pemetaan Lokasi & Data Mandiri Penduduk Non-Permanen</title>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="author" content="Talitha Syifa Al Fath_124250173 & Marva H._124250159">    
+<meta name="description" content="SIPemandiri - Sistem Informasi Pemetaan Lokasi & Data Mandiri Penduduk Non-Permanen (Kontrak & Kost) Berbasis Web"> 
+<title>SIPeManDiRi</title>
+<link rel="icon" href="LOGOSIPEMANDIRI.png" type="image/x-icon"> 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
@@ -413,23 +416,19 @@ gap:15px;
 </div>
 
 <nav>
-<a href="logout.php">Logout</a>
-<a href="index.php">
-Beranda
-</a>
-<a href="pendataan.php">
-Pendataan
-</a>
-<a href="pemetaan.php">
-Pemetaan
-</a>
-<a href="statistik.php">
-Statistik
-</a>
-<a href="tentang.php">
-Tentang
-</a>
+    
+     <?php if($_SESSION['role'] == 'admin'): ?>   
+    <a href="manage_user.php">Kelola User</a>    
+    <?php endif; ?>                        
+    <a href="logout.php">Logout</a>
+    <a href="index.php">Beranda</a>
+    <a href="pendataan.php">Pendataan</a>
+    <a href="pemetaan.php">Pemetaan</a>
+    <a href="statistik.php">Statistik</a>
+    <a href="tentang.php">Tentang</a>         
 </nav>
+
+
 
 </header>
 
