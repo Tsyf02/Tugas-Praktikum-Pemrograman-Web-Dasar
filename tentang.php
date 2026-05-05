@@ -242,17 +242,17 @@ penyimpanan database, dan manajemen informasi penduduk.
 
 <div class="team-title">
 
-<h1>
+<h2>
 Tim Pengembang
-</h1>
+</h2>
 
-<h2>
+<h3>
 Rasya  Marva Hervian 
-</h2>
+</h3>
 
-<h2>
+<h3>
 Syifa Al Fath Talitha
-</h2>
+</h3>
 
 
 
