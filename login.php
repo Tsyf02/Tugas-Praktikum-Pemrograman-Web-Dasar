@@ -100,6 +100,8 @@ cursor:pointer;
 </div>
 
 <nav>
+    <!-- aku nambah daftar akun biar bisa nambah user   -->
+<a href="manage_user.php">Daftar Akun</a>  
 <a href="index.php">Beranda</a>
 <a href="pendataan.php">Pendataan</a>
 <a href="pemetaan.php">Pemetaan</a>
