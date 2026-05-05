@@ -21,3 +21,8 @@ CREATE TABLE user (
 
 INSERT INTO user (username, password)
 VALUES ('sistem', MD5('12345'));
+
+-- NAMBAHIN KOLOM NAMA_LENGKAP DAN ROLE YANG DEFAULTNYA 'petugas'-----
+ALTER TABLE user ADD COLUMN nama_lengkap VARCHAR(100) AFTER username, ADD COLUMN role ENUM('admin','petugas') DEFAULT 'petugas' AFTER password;
+
+UPDATE user SET role='admin', nama_lengkap='Administrator' WHERE username='sistem';
