@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Tentang Sistem</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="author" content="Talitha Syifa Al Fath_124250173 & Marva H._124250159">    
+<meta name="description" content="SIPemandiri - Sistem Informasi Pemetaan Lokasi & Data Mandiri Penduduk Non-Permanen (Kontrak & Kost) Berbasis Web"> 
+<title>SIPeManDiRi</title>
+<link rel="icon" href="LOGOSIPEMANDIRI.png" type="image/x-icon"> 
 
 <link rel="stylesheet" href="style.css">
 
@@ -188,9 +189,9 @@ Tentang Sistem Informasi
 </h1>
 
 <p>
-Sistem Informasi Pemetaan Lokasi & Data Mandiri Penduduk Non-Permanen
+"Sistem Informasi Pemetaan Lokasi & Data Mandiri Penduduk Non-Permanen
 dibuat untuk membantu proses pendataan penghuni kost dan rumah kontrakan
-secara digital, modern, cepat, dan lebih terintegrasi berbasis web.
+secara digital, modern, cepat, dan lebih terintegrasi berbasis web."
 </p>
 
 </div>
@@ -198,42 +199,46 @@ secara digital, modern, cepat, dan lebih terintegrasi berbasis web.
 <div class="about-grid">
 
 <div class="about-card">
-
+<center>
 <h2>
-📌 Tujuan Sistem
+Tujuan Sistem
+<br> 📌 </br>
 </h2>
 
 <p>
 Membantu pemerintah daerah maupun lingkungan RT/RW dalam melakukan
 pendataan penduduk non-permanen secara lebih efektif dan terstruktur.
 </p>
-
+</center>
 </div>
 
 <div class="about-card">
-
+<center>
 <h2>
-🌐 Teknologi
+Teknologi
+ <br>🌐 </br>
 </h2>
 
 <p>
 Website ini dibangun menggunakan PHP, MySQL, HTML, CSS, dan JavaScript
 dengan tampilan modern serta mudah digunakan.
 </p>
-
+</center>
 </div>
 
 <div class="about-card">
-
+<center>
 <h2>
-📊 Fitur Sistem
+
+Fitur Sistem
+<br>📊</br>
 </h2>
 
 <p>
 Sistem memiliki fitur pendataan penghuni, pemetaan lokasi tempat tinggal,
 penyimpanan database, dan manajemen informasi penduduk.
 </p>
-
+</center>
 </div>
 
 </div>
@@ -259,7 +264,7 @@ Syifa Al Fath Talitha
 <div class="info-box">
 
 <h1>
-📍 Informasi Tambahan
+📍 Informasi Tambahan📍 
 </h1>
 
 <p>
