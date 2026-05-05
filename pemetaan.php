@@ -1,11 +1,16 @@
+<?php
+session_start();
+if(!isset($_SESSION['login'])){ header("Location: login.php"); exit; }
+?>
 <!DOCTYPE html>
 <html lang="id">
 <head>
-
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Pemetaan</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="author" content="Talitha Syifa Al Fath_124250173 & Marva H._124250159">    
+<meta name="description" content="SIPemandiri - Sistem Informasi Pemetaan Lokasi & Data Mandiri Penduduk Non-Permanen (Kontrak & Kost) Berbasis Web"> 
+<title>SIPeManDiRi</title>
+<link rel="icon" href="LOGOSIPEMANDIRI.png" type="image/x-icon"> 
 
 <link rel="stylesheet" href="style.css">
 
@@ -21,6 +26,7 @@
 </div>
 
 <nav>
+<a href="logout.php">Logout</a>
 <a href="index.php">Beranda</a>
 <a href="pendataan.php">Pendataan</a>
 <a href="pemetaan.php">Pemetaan</a>

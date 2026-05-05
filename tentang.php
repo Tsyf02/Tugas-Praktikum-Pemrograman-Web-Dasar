@@ -242,19 +242,6 @@ penyimpanan database, dan manajemen informasi penduduk.
 
 <div class="team-title">
 
-<h1>
-Tim Pengembang
-</h1>
-
-<h2>
-Rasya  Marva Hervian 
-</h2>
-
-<h2>
-Syifa Al Fath Talitha
-</h2>
-
-
 
 <div class="info-box">
 
@@ -278,7 +265,19 @@ proses pemetaan lokasi tempat tinggal untuk mempermudah monitoring wilayah.
 <footer>
 
 © 2026 Sistem Informasi Penduduk Non-Permanen Berbasis Web
-
+<br>
+<br>
+<small>
+<h3>
+<center>Tim Pengembang</center>
+</h3>
+<h3>
+Rasya Marva Hervian (1241250159)
+</h3>
+<h3>
+Talitha Syifa Al Fath (124250173)
+</h3>
+</small>
 </footer>
 
 </body>
