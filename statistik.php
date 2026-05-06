@@ -1,8 +1,9 @@
 <?php
 session_start();
+if(!isset($_SESSION['login'])){ header("Location: login.php"); exit; }
+
 $conn = mysqli_connect("localhost","root","","db_penduduk");
 
-/* STATISTIK */
 $total = mysqli_fetch_assoc(mysqli_query($conn,"
 SELECT COUNT(*) as jumlah FROM penduduk
 "))['jumlah'];
@@ -19,14 +20,14 @@ SELECT COUNT(*) as jumlah FROM penduduk WHERE jenis='Kontrak'
 <!DOCTYPE html>
 <html lang="id">
 <head>
-
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Statistik</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="author" content="Talitha Syifa Al Fath_124250173 & Marva H._124250159">    
+<meta name="description" content="SIPemandiri - Sistem Informasi Pemetaan Lokasi & Data Mandiri Penduduk Non-Permanen (Kontrak & Kost) Berbasis Web"> 
+<title>SIPeManDiRi</title>
+<link rel="icon" href="LOGOSIPEMANDIRI.png" type="image/x-icon"> 
 
 <link rel="stylesheet" href="style.css">
-
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -40,7 +41,7 @@ margin:40px auto;
 padding:0 20px;
 }
 
-/* CARD (ikut style.css tapi lebih kecil) */
+/* CARD KECIL */
 .stat-cards{
 display:flex;
 justify-content:center;
@@ -50,40 +51,44 @@ margin-bottom:30px;
 }
 
 .stat-card{
-background:rgba(255,255,255,0.12);
+background:rgba(255,255,255,0.1);
 backdrop-filter:blur(10px);
-padding:20px;
-border-radius:20px;
+padding:20px 25px;
+border-radius:15px;
 text-align:center;
 width:200px;
-box-shadow:0 10px 25px rgba(0,0,0,0.3);
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+transition:0.3s;
 }
 
-/* SAMAKAN FONT */
+.stat-card:hover{
+transform:translateY(-5px);
+}
+
 .stat-card h2{
-font-size:32px; /* sama kaya card lain */
-margin-bottom:8px;
+font-size:28px;
+margin-bottom:5px;
 }
 
 .stat-card p{
-font-size:16px; /* sama kaya teks lain */
+font-size:14px;
 }
 
 /* GRAFIK */
 .chart-box{
 background:white;
-padding:25px;
-border-radius:20px;
-box-shadow:0 10px 30px rgba(0,0,0,0.3);
+padding:20px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,0.3);
 }
 
-.chart-box h2{
+.chart-box h3{
 color:#0F172A;
 margin-bottom:15px;
-font-size:20px; /* samain heading */
 text-align:center;
 }
 
+/* RESPONSIVE */
 @media(max-width:768px){
 .stat-card{
 width:100%;
@@ -102,6 +107,7 @@ width:100%;
 </div>
 
 <nav>
+<a href="logout.php">Logout</a>
 <a href="index.php">Beranda</a>
 <a href="pendataan.php">Pendataan</a>
 <a href="pemetaan.php">Pemetaan</a>
@@ -123,12 +129,12 @@ width:100%;
 
 <div class="stat-card">
 <h2><?= $kost; ?></h2>
-<p>Penghuni Kost</p>
+<p>Kost</p>
 </div>
 
 <div class="stat-card">
 <h2><?= $kontrak; ?></h2>
-<p>Penghuni Kontrak</p>
+<p>Kontrak</p>
 </div>
 
 </div>
@@ -136,7 +142,7 @@ width:100%;
 <!-- GRAFIK -->
 <div class="chart-box">
 
-<h2>Perbandingan Data Penduduk</h2>
+<h3>Perbandingan Data Penduduk</h3>
 
 <canvas id="myChart" height="120"></canvas>
 
@@ -175,7 +181,7 @@ beginAtZero: true
 </script>
 
 <footer>
-© 2026 Sistem Informasi Penduduk Non-Permanen
+© 2026 Sistem Informasi Penduduk
 </footer>
 
 </body>
