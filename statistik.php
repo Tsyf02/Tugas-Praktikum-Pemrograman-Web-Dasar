@@ -2,6 +2,7 @@
 session_start();
 $conn = mysqli_connect("localhost","root","","db_penduduk");
 
+/* STATISTIK */
 $total = mysqli_fetch_assoc(mysqli_query($conn,"
 SELECT COUNT(*) as jumlah FROM penduduk
 "))['jumlah'];
@@ -26,6 +27,8 @@ SELECT COUNT(*) as jumlah FROM penduduk WHERE jenis='Kontrak'
 
 <link rel="stylesheet" href="style.css">
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <style>
@@ -37,7 +40,7 @@ margin:40px auto;
 padding:0 20px;
 }
 
-/* CARD KECIL */
+/* CARD (ikut style.css tapi lebih kecil) */
 .stat-cards{
 display:flex;
 justify-content:center;
@@ -47,44 +50,40 @@ margin-bottom:30px;
 }
 
 .stat-card{
-background:rgba(255,255,255,0.1);
+background:rgba(255,255,255,0.12);
 backdrop-filter:blur(10px);
-padding:20px 25px;
-border-radius:15px;
+padding:20px;
+border-radius:20px;
 text-align:center;
 width:200px;
-box-shadow:0 5px 15px rgba(0,0,0,0.3);
-transition:0.3s;
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
 }
 
-.stat-card:hover{
-transform:translateY(-5px);
-}
-
+/* SAMAKAN FONT */
 .stat-card h2{
-font-size:28px;
-margin-bottom:5px;
+font-size:32px; /* sama kaya card lain */
+margin-bottom:8px;
 }
 
 .stat-card p{
-font-size:14px;
+font-size:16px; /* sama kaya teks lain */
 }
 
 /* GRAFIK */
 .chart-box{
 background:white;
-padding:20px;
-border-radius:15px;
-box-shadow:0 5px 20px rgba(0,0,0,0.3);
+padding:25px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
 }
 
-.chart-box h3{
+.chart-box h2{
 color:#0F172A;
 margin-bottom:15px;
+font-size:20px; /* samain heading */
 text-align:center;
 }
 
-/* RESPONSIVE */
 @media(max-width:768px){
 .stat-card{
 width:100%;
@@ -99,7 +98,7 @@ width:100%;
 <header>
 
 <div class="logo">
-📊 Statistik
+📍 SIPeManDiRi
 </div>
 
 <nav>
@@ -124,12 +123,12 @@ width:100%;
 
 <div class="stat-card">
 <h2><?= $kost; ?></h2>
-<p>Kost</p>
+<p>Penghuni Kost</p>
 </div>
 
 <div class="stat-card">
 <h2><?= $kontrak; ?></h2>
-<p>Kontrak</p>
+<p>Penghuni Kontrak</p>
 </div>
 
 </div>
@@ -137,7 +136,7 @@ width:100%;
 <!-- GRAFIK -->
 <div class="chart-box">
 
-<h3>Perbandingan Data Penduduk</h3>
+<h2>Perbandingan Data Penduduk</h2>
 
 <canvas id="myChart" height="120"></canvas>
 
@@ -176,7 +175,7 @@ beginAtZero: true
 </script>
 
 <footer>
-© 2026 Sistem Informasi Penduduk
+© 2026 Sistem Informasi Penduduk Non-Permanen
 </footer>
 
 </body>
