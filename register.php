@@ -68,7 +68,7 @@ if(isset($_POST['daftar'])){
         <input type="text" name="username" placeholder="Username" required>
         <input type="password" name="password" placeholder="Password" required>
         <select name="role">
-            <option value="petugas">Petugas</option>
+            <option value="user">User</option>
             <option value="admin">Admin</option>
         </select>
         <button type="submit" name="daftar" class="btn">Simpan Akun</button>
