@@ -16,18 +16,20 @@ AND password='$password'
 $cek = mysqli_num_rows($data);
 
 if($cek > 0){
+    $user = mysqli_fetch_assoc($data);
+    $_SESSION['login']    = true;
+    $_SESSION['role']     = $user['role'];
+    $_SESSION['username'] = $user['username'];
+    $_SESSION['user_id']  = $user['id'];
 
-$_SESSION['login'] = true;
-
-echo "
-<script>
-alert('Login berhasil');
-document.location='index.php';
-</script>
-";
-
+    echo "
+    <script>
+    alert('Login berhasil');
+    document.location='index.php';
+    </script>
+    ";
 }else{
-
+            // menambahkan user untuk login selain untuk admin
 echo "
 <script>
 alert('Username / Password salah');
@@ -44,10 +46,13 @@ alert('Username / Password salah');
 <head>
 
 <meta charset="UTF-8">
-<title>Login</title>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="author" content="Talitha Syifa Al Fath_124250173 & Marva H._124250159">    
+<meta name="description" content="SIPemandiri - Sistem Informasi Pemetaan Lokasi & Data Mandiri Penduduk Non-Permanen (Kontrak & Kost) Berbasis Web"> 
+<title>SIPeManDiRi</title>
+<link rel="icon" href="LOGOSIPEMANDIRI.png" type="image/x-icon"> 
 <link rel="stylesheet" href="style.css">
-
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 
 .login-box{
@@ -85,8 +90,25 @@ cursor:pointer;
 
 </style>
 
+
 </head>
 <body>
+<header>
+
+<div class="logo">
+📍 SIPeManDiRi
+</div>
+
+<nav>
+<a href="manage_user.php">Daftar Akun</a>  
+<a href="index.php">Beranda</a>
+<a href="pendataan.php">Pendataan</a>
+<a href="pemetaan.php">Pemetaan</a>
+<a href="statistik.php">Statistik</a>
+<a href="tentang.php">Tentang</a>
+</nav>
+
+</header>
 
 <div class="login-box">
 
@@ -106,5 +128,8 @@ Login
 
 </div>
 
+<footer>
+© 2026 Sistem Informasi Penduduk Non-Permanen
+</footer>
 </body>
 </html>
