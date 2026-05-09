@@ -21,7 +21,7 @@ SIPeManDiRi is a web-based information system built with PHP and MySQL to help d
 
 ## 🖼️ Screenshots
 
-*(Add your own screenshots here, for example:)*
+*(Add our own screenshots here, for example:)*
 
 | Homepage | Data Entry | Mapping | Statistics |
 |----------|------------|---------|------------|
